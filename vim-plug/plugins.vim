@@ -23,5 +23,6 @@ call plug#begin(plugpath .. 'plugged')
     Plug 'https://gitlab.com/aaa66/vim-apl.git' " git@gitlab.com:aaa66/vim-apl.git' https://gitlab.com/n9n/vim-apl'
 
     "Colour Schemes
+    Plug 'lifepillar/vim-solarized8'
     Plug 'NLKNguyen/papercolor-theme'    
 call plug#end()
