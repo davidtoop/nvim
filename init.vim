@@ -1,6 +1,8 @@
 if has("win64") || has("win32") || has("win16")
   let g:configpath = $LOCALAPPDATA .. '\nvim'
   let g:pathdelim = '\'
+  let g:python3_host_prog = 'C:\Users\david\AppData\Local\Programs\Python\Python39\Python.exe'
+  let g:python_hots_prog = 'C:\Python27\Python.exe'
 else
   let g:configpath = $HOME .. '/.config/nvim'
   let g:pathdelim = '/'
