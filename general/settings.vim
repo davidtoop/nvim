@@ -25,7 +25,7 @@ set laststatus=0                        " Always display the status line
 "set number                              Line numbers
 set number relativenumber
 "set cursorline                          Enable highlighting of the current line
-set background=dark                     " tell vim what the background color looks like
+"set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 "set noshowmode                          We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
@@ -36,7 +36,13 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
 
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+set termguicolors
+colorscheme solarized8_flat
+highlight Comment cterm=italic gui=italic
+"au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+
+"Key maps
+nnoremap <cr> :noh<CR><CR>:<backspace>   " Turn off search highlighting 
 
 " You can't stop me
 "cmap w!! w !sudo tee %
