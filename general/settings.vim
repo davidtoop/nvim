@@ -1,5 +1,5 @@
 " set leader key
-let g:mapleader = "\<Space>"
+"let g:mapleader = "\<Space>"
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -43,6 +43,7 @@ highlight Comment cterm=italic gui=italic
 
 "Key maps
 nnoremap <cr> :noh<CR><CR>:<backspace>   " Turn off search highlighting 
+nnoremap <Leader>v :source $MYVIMRC<cr>
 
 " You can't stop me
 "cmap w!! w !sudo tee %
