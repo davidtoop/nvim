@@ -25,5 +25,5 @@ call plug#begin(MYplugpath .. 'plugged')
     "Colour Schemes
     Plug 'lifepillar/vim-solarized8'
     Plug 'NLKNguyen/papercolor-theme'    
-    Plug 'tpope/fugitive'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
